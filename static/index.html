@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forzan</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="midnight-blues">
+    <nav class="top-nav">
+        <div class="controls">
+            <button onclick="createNewTab()">+</button>
+            <button onclick="location.reload()">↻</button>
+        </div>
+        <form id="proxy-form">
+            <input id="url-input" placeholder="Search or enter URL...">
+        </form>
+    </nav>
+    <div id="tabbar" class="tab-list">
+        <div class="tab active" data-id="1" onclick="switchTab(1)">New Tab</div>
+    </div>
+    <div id="view-container">
+        <iframe id="view-1" src="/s" class="active-view"></iframe>
+    </div>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
